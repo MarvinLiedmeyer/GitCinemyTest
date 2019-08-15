@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <!--Add Meta-Tags for scaling etc.-->
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1, maximum-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta charset="utf-8">
+
+    <title>Ein Star kommt</title>
+
+    <!--Load the chayns styles-->
+    <link rel="stylesheet" href="https://api.chayns.net/css/">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="tapp">
+        <div id="tapp-intro">
+            <h1>Triff <strong> Jason Statham</strong> alias <strong> Shaw</strong> in Ahaus!</h1>
+            <p>Triff Jason Statham am 17.08. in der Ahauser Innenstadt im Cinemy.</p>
+            <p>Sei einer von 11 Personen, die mit ihm den Abend verbringen dürfen, um den neuen <strong>Fast &
+                    Furious Teil 'Hobbs and Shaw'</strong> zu schauen.</p>
+            <div class="tapp-trailer" style="padding: 50px 0px">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/-oxM-BRJtEM" frameborder="0"
+                    allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
+                <p class="timer closeTimer"> </p>
+            </div>
+        </div>
+        <div style="text-align: center">
+            <button class="button btnQuiz" type="button">Versuch dein Glück!</button>
+        </div>
+        <p class="desc" style="padding-top: 20px;">Wenn du möchtest, kannst du uns auch <em
+                class="tooltip _callme" style="color: brown; font-size: 20px;">Anrufen</em>.</p>
+        <div>
+            <button class="button routeButton" style="color:brown;">Route planen</button>
+        </div>
+        <div id="quiz" style="display: none; background: white; margin: 50px; padding: 20px;">
+            <div id="q1" style="display: none;">
+                <h1>Hier kommt der Test!</h1>
+                <h2>Frage 1 von 4</h2>
+
+                <p>Wie heißt Jason Statham in Fast & Furious?</p>
+                <input type="radio" class="radio question" name="frage1" id="ff1" value="0">
+                <label for="ff1" style="padding-right: 10px;"> Sergej</label>
+                <p> </p>
+                <input type="radio" class="radio question" name="frage1" id="ff2" value="0">
+                <label for="ff2" style="padding-right: 10px;">Thaddäus</label>
+                <p> </p>
+                <input type="radio" class="radio question" name="frage1" id="ff3" value="1">
+                <label for="ff3" style="padding-right: 10px;"> Shaw</label>
+                <p> </p>
+                <input type="radio" class="radio question" name="frage1" id="ff4" value="0">
+                <label for="ff4" style="padding-right: 10px;"> Hobbs </label>
+                <p> </p>
+                <div style="text-align: right;">
+                    <button class="button btnQ1">Weiter</button> </di>
+                </div>
+            </div>
+            <div id="q2" style="display: none;">
+                <h2>Frage 2 von 4</h2>
+                <p>In welchem Film spielte Jason Statham eine Hauptrolle?</p>
+                <input type="radio" class="radio question" name="frage2" id="ff11" value="1">
+                <label for="ff11" style="padding-right: 10px;"> The Transporter</label>
+                <p> </p>
+                <input type="radio" class="radio question" name="frage2" id="ff21" value="0">
+                <label for="ff21" style="padding-right: 10px;">Baywatch</label>
+                <p> </p>
+                <input type="radio" class="radio question" name="frage2" id="ff31" value="0">
+                <label for="ff31" style="padding-right: 10px;">Eiskönigin 2</label>
+                <p> </p>
+                <input type="radio" class="radio question" name="frage2" id="ff41" value="0">
+                <label for="ff41" style="padding-right: 10px;"> Der Hobbit </label>
+                <p> </p>
+                <div style="text-align: right;">
+                    <button class="button btnQ2">Weiter</button> </di>
+                </div>
+
+            </div>
+            <div id="q3" style="display: none;">
+                <h2>Frage 3 von 4</h2>
+                <p>In wie vielen Teilen hat Deckard Shaw schon mitgespielt?</p>
+                <input type="radio" class="radio question" name="frage3" id="ff12" value="0">
+                <label for="ff12" style="padding-right: 10px;"> 2</label>
+                <p> </p>
+                <input type="radio" class="radio question" name="frage3" id="ff22" value="1">
+                <label for="ff22" style="padding-right: 10px;">3</label>
+                <p> </p>
+                <input type="radio" class="radio question" name="frage3" id="ff32" value="0">
+                <label for="ff32" style="padding-right: 10px;">4</label>
+                <p> </p>
+                <input type="radio" class="radio question" name="frage3" id="ff42" value="0">
+                <label for="ff42" style="padding-right: 10px;"> 5 </label>
+                <p> </p>
+                <div style="text-align: right;">
+                    <button class="button btnQ3">Weiter</button> </di>
+                </div>
+            </div>
+            <div id="q4" style="display: none;">
+                <h2>Frage 4 von 4</h2>
+                <p>Was hat Deckard Shaw beruflich gemacht?</p>
+                <input type="radio" class="radio question" name="frage4" id="ff13" value="0">
+                <label for="ff13" style="padding-right: 10px;"> Pfleger</label>
+                <p> </p>
+                <input type="radio" class="radio question" name="frage4" id="ff23" value="0">
+                <label for="ff23" style="padding-right: 10px;">Tierarzt</label>
+                <p> </p>
+                <input type="radio" class="radio question" name="frage4" id="ff33" value="0">
+                <label for="ff33" style="padding-right: 10px;">Florist</label>
+                <p> </p>
+                <input type="radio" class="radio question" name="frage4" id="ff43" value="1">
+                <label for="ff43" style="padding-right: 10px;"> britischer Offizier </label>
+                <p> </p>
+                <div style="text-align: right;">
+                    <button class="button btnQ4">Weiter</button> </di>
+                </div>
+            </div>
+            <div id="result" style="text-align: center; display: none; ">
+                <img src="images/jason-statham.jpg" alt="Jasons face" style="width: 100%; height:auto;">
+                <button class="button btnResult">Sieh Dir an, ob du es geschafft
+                    hast!</button>
+            </div>
+            <div id="end" style="display: none;">
+                <h1 class="happy"></h1>
+                <p class="timer lostimer"></p>
+            </div>
+        </div>
+
+    </div>
+    <!--Load the js chayns API-->
+    <script src="https://api.chayns-static.space/js/v4.0/chayns.min.js"></script>
+    <script type="module" src="./index.js"></script>
+</body>
+</html>
